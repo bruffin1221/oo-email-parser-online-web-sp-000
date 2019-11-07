@@ -17,8 +17,3 @@ end
 
 
 end
-
-email_addresses ="avi@test.com", "arel@test.com test@avi.com", "test@arel.com"
-parser = EmailAddressParser.new(email_addresses)
-
-parser.parse
