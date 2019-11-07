@@ -12,7 +12,7 @@ def initialize(email_addresses)
 end
 
 def parse
-  @email_addresses.split(", ").join(" ").split(", ")
+  @email_addresses.split(", ").join(", ").split(", ")
 end
 
 
@@ -22,6 +22,3 @@ email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
 
 parser.parse
-
-emails = ["avi@test.com, arel@test.com test@avi.com, test@arel.com"]
-emails.join(",").split
