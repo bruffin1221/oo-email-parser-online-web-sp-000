@@ -7,11 +7,13 @@ class EmailAddressParser
 
 attr_accessor :email_addresses
 
-def self.parser(email_addresses)
-  email_addresses.split
+def initialize=(email_addresses)
+  @email_addresses=email_addresses
 end
 
 end
 
 email_addresses = "avi@test.com, arel@test.com"
 parser = EmailAddressParser.parser(email_addresses)
+
+parser.parse
