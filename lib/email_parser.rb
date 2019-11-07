@@ -12,8 +12,13 @@ def initialize(email_addresses)
 end
 
 def parse
-  @email_addresses.split(", ").uniq
+  @email_addresses.split(", ").uniq.join
 end
 
 
 end
+
+email_addresses = "john@doe.com, person@somewhere.org"
+parser = EmailAddressParser.new(email_addresses)
+
+parser.parse
