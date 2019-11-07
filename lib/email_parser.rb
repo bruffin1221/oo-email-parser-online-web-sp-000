@@ -12,13 +12,13 @@ def initialize(email_addresses)
 end
 
 def parse
-  @email_addresses.split(", ")
+  @email_addresses.split(", ").uniq
 end
 
 
 end
 
-email_addresses = "avi@test.com, arel@test.com"
+email_addresses ="avi@test.com, avi@test.com"
 parser = EmailAddressParser.new(email_addresses)
 
 parser.parse
